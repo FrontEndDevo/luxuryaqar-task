@@ -12,11 +12,12 @@ import {
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import Image from "next/image";
 const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.image}>
-        <img src={flower} alt="flower background" />
+        <Image src={flower} width={350} height={600} />
       </div>
       <div className={classes.title}>
         <h1>Relax & Enjoy</h1>
