@@ -1,81 +1,119 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
 .header {
-  
-  .image{
-    img{}
+  color: $main_color;
+  background-image: url("../../assets/images/header-background-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // Need to understand this property well (height):
+  height: 1080px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
   }
-  
-  .title{
-    h1{
 
-    }
-    p{
-
+  .image {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    img {
+      width: 100px;
+      height: 100px;
     }
   }
 
-  .booking{
-    .treatment{
-      .heading{
-        h4{
+  .title {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    h1 {
+      font-size: $heading_one;
+      font-weight: normal;
+    }
+    p {
+      width: 30vw;
+      font-size: $heading_six;
+      margin-top: 5rem;
+    }
+  }
 
-        }
-        
-        svg{
-
-        }
+  .booking {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+    border-top-left-radius: 1rem;
+    padding: 3rem 5rem;
+    // Styling for all (heading) DIVs:
+    .heading {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      cursor: pointer;
+      h4 {
+        font-size: $heading_six;
+        font-weight: 400;
+        text-decoration: underline;
       }
-
+    }
+    .treatment {
       // ul{}
     }
 
-    .date{
-      .heading{
-        h4{
-
-        }
-
-        svg{
-
-        }
-      }
-
+    .date {
       // input{}
     }
 
-    .therapist{
-      .heading{
-        h4{
-
-        }
-        
-        svg{
-
-        }
-      }
-
+    .therapist {
       // ul{}
     }
 
-    .guest{
-      .heading{
-        h4{
-
+    .guest {
+      .heading {
+        h4 {
         }
-        
-        svg{
 
+        svg {
         }
       }
     }
-  
-    .book{
 
+    .book {
+      cursor: pointer;
+      background-color: $main_color;
+      padding: 12px 3rem;
+      border-radius: 10rem;
+      font-size: $heading_six;
+      margin-left: 5rem;
     }
   }
 
-  .social{
-    svg{}
+  .social {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    padding: 1.5rem;
+    padding-left: 1rem;
+    svg {
+      font-size: 2rem;
+      cursor: pointer;
+    }
   }
 }

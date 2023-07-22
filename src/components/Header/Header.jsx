@@ -16,9 +16,9 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.image}>
-        <img src={flower} alt="flower background" loading="lazy" />
+        <img src={flower} alt="flower background" />
       </div>
-      <div className="title">
+      <div className={classes.title}>
         <h1>Relax & Enjoy</h1>
         <p>
           Luxury Arab Spa is a holistic wellbeing center promoting a healthier
