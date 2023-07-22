@@ -1,4 +1,81 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
 .header {
+  
+  .image{
+    img{}
+  }
+  
+  .title{
+    h1{
+
+    }
+    p{
+
+    }
+  }
+
+  .booking{
+    .treatment{
+      .heading{
+        h4{
+
+        }
+        
+        svg{
+
+        }
+      }
+
+      // ul{}
+    }
+
+    .date{
+      .heading{
+        h4{
+
+        }
+
+        svg{
+
+        }
+      }
+
+      // input{}
+    }
+
+    .therapist{
+      .heading{
+        h4{
+
+        }
+        
+        svg{
+
+        }
+      }
+
+      // ul{}
+    }
+
+    .guest{
+      .heading{
+        h4{
+
+        }
+        
+        svg{
+
+        }
+      }
+    }
+  
+    .book{
+
+    }
+  }
+
+  .social{
+    svg{}
+  }
 }

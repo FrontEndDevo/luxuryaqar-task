@@ -64,7 +64,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faUser} />
           </div>
         </div>
-        <button>Book Now</button>
+        <button className={classes.book}>Book Now</button>
       </section>
       <aside className={classes.social}>
         <FontAwesomeIcon icon={faFacebook} />
