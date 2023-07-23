@@ -67,7 +67,7 @@
   }
 
   .social {
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -83,5 +83,11 @@
       font-size: 2rem;
       cursor: pointer;
     }
+  }
+}
+
+@include responsive(tablet) {
+  .side-bar {
+    width: 50vw;
   }
 }

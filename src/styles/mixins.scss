@@ -11,3 +11,26 @@
     }
   }
 }
+
+@mixin navbar-content {
+  .navbar {
+    justify-content: space-between;
+
+    .side-bar {
+      display: block;
+    }
+
+    .image {
+      width: 80px;
+      height: 100px;
+    }
+
+    .links {
+      display: none;
+    }
+
+    .contact {
+      display: none;
+    }
+  }
+}
