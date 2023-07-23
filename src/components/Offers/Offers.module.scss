@@ -10,3 +10,15 @@
     overflow: hidden;
   }
 }
+
+@include responsive(mobile) {
+  .offers {
+    padding: 1rem;
+
+    .all-offers {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+}
