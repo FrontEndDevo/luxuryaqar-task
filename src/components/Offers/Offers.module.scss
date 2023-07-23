@@ -22,3 +22,14 @@
     }
   }
 }
+
+@include responsive(tablet) {
+  .offers {
+    padding: 2rem;
+
+    .all-offers {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
