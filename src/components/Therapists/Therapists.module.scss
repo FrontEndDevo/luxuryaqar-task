@@ -9,3 +9,14 @@
     overflow: hidden;
   }
 }
+
+@include responsive(mobile) {
+  .therapists {
+    padding: 1rem;
+
+    .all-therapists {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -28,3 +28,11 @@
     }
   }
 }
+
+@include responsive(mobile) {
+  .therapist {
+    div {
+      justify-content: space-around;
+    }
+  }
+}
