@@ -1,6 +1,6 @@
 import classes from './Offers.module.scss';
 
-const Offers = () => {
+const Offers = (props) => {
   return (
     <section className={classes.offers}>Offers</section>
   )
