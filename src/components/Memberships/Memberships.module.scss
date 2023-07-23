@@ -41,3 +41,14 @@
     }
   }
 }
+
+@include responsive(tablet) {
+  .memberships {
+    padding: 2rem;
+
+    .all-memberships {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
