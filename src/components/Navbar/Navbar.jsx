@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import classes from "./Navbar.module.scss";
@@ -15,6 +15,16 @@ import SideBar from "../SideBar/SideBar";
 const Navbar = () => {
   // This to managing appearing and disappearing the (menu-icon):
   const [sideBar, setSideBar] = useState(false);
+  // Set a background-color property on a certain scrollY:
+  const [navbarBackground, setNavbarBackground] = useState(false);
+
+  useEffect(() => {
+    const changeNavbarBackground = () => {
+      setNavbarBackground(window.scrollY >= 200 ? true : false);
+    };
+
+    window.addEventListener("scroll", changeNavbarBackground);
+  }, []);
 
   const toggleSideBarHandler = () => {
     setSideBar((prevState) => !prevState);
@@ -22,6 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className={classes.navbar}>
+      {navbarBackground && <div className={classes["navbar-bg"]}></div>}
       <Image
         className={classes.image}
         src={logo}
