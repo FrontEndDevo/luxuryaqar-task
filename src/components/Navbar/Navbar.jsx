@@ -10,6 +10,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.png";
+import SideBar from "../SideBar/SideBar";
 
 const Navbar = () => {
   // This to managing appearing and disappearing the (menu-icon):
@@ -56,6 +57,7 @@ const Navbar = () => {
           <span></span>
           <span></span>
         </span>
+        <SideBar />
       </div>
     </nav>
   );
