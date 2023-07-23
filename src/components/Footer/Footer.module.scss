@@ -1,65 +1,75 @@
-@use '../../styles/vars' as *;
-@use '../../styles/mixins' as *;
-.footer{
-  .content{
-    .L-H-S{
-      .info{
-        h3{
-
+@use "../../styles/vars" as *;
+@use "../../styles/mixins" as *;
+.footer {
+  background-color: black;
+  color: white;
+  padding: 3rem 20rem 3rem 8rem;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    .L-H-S {
+      display: flex;
+      flex-direction: column;
+      gap: 7rem;
+      .info {
+        h3 {
+          font-size: $heading_two;
+          margin-bottom: 1rem;
         }
-        p{
-
-        }
-      }
-      .contact{
-        .address{
-          svg{
-
-          }
-          p{
-
-          }
-        }
-        
-        .mobile{
-          svg{
-
-          }
-          p{
-
-          }
-        }
-
-      }
-    }
-
-    .R-H-S{
-
-      .links{
-        h6{
-
-        }
-        li{
-          a{
-            
-          }
+        p {
+          width: 500px;
+          font-size: $paragraph_regular;
         }
       }
-
-      .social{
-        h6{
-
-        }
-        li{
-          svg{
-
-          }
-          
-          a{
-
-          }
+      .contact {
+        .address,
+        .mobile {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin: 1rem 0;
         }
       }
     }
+
+    .R-H-S {
+      display: flex;
+      gap: 10rem;
+      text-transform: uppercase;
+
+      .links,
+      .social {
+        h6 {
+          padding: 5px 0;
+          // border-bottom: 1px solid white;
+          font-size: $heading_five;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 225px;
+            height: 1px;
+            background-color: white;
+          }
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          a {
+            color: white;
+            margin: 8px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-rights {
+    text-align: end;
+    font-size: $paragraph_regular;
   }
 }

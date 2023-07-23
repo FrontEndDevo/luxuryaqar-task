@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./Footer.module.scss";
-import { faLocationDot, faMobile } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import {
   faFacebook,
@@ -90,7 +90,7 @@ const Footer = () => {
               </p>
             </div>
             <div className={classes.mobile}>
-              <FontAwesomeIcon icon={faMobile} />
+              <FontAwesomeIcon icon={faPhone} />
               <p>Mobile: +971528082776</p>
             </div>
           </div>
