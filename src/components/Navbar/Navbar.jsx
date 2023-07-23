@@ -57,7 +57,7 @@ const Navbar = () => {
           <span></span>
           <span></span>
         </span>
-        <SideBar />
+        <SideBar showSideBar={sideBar} />
       </div>
     </nav>
   );

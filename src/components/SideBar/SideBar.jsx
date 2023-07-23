@@ -37,7 +37,11 @@ const SideBar = (props) => {
   );
 
   return (
-    <aside className={classes["side-bar"]}>
+    <aside
+      className={`${classes["side-bar"]} ${
+        props.showSideBar ? classes["show-side-bar"] : ""
+      }`}
+    >
       <Image className={classes.image} src={logo} width={100} height={115} />
       {navbarLinks}
       <div className={classes.contact}>
