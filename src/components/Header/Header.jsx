@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.image}>
-        <Image src={flower} width={350} height={600} />
+        <Image src={flower} width={350} height={600} alt="flower"/>
       </div>
       <div className={classes.title}>
         <h1>Relax & Enjoy</h1>

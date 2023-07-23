@@ -22,7 +22,13 @@ const Navbar = () => {
 
   return (
     <nav className={classes.navbar}>
-      <Image className={classes.image} src={logo} width={100} height={115} />
+      <Image
+        className={classes.image}
+        src={logo}
+        width={100}
+        height={115}
+        alt="Luxury Arab Logo"
+      />
       <ul className={classes.links}>
         <li>
           <Link href="/home">Home</Link>
