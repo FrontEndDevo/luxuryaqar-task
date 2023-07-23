@@ -19,3 +19,25 @@
     overflow: hidden;
   }
 }
+
+@include responsive(mobile) {
+  .memberships {
+    padding: 3rem 1rem 0;
+
+    .title {
+      text-align: center;
+      h2 {
+        font-size: $heading_five;
+      }
+      p {
+        font-size: $paragraph_regular;
+      }
+    }
+
+    .all-memberships {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+}
