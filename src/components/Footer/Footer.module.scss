@@ -1,5 +1,65 @@
 @use '../../styles/vars' as *;
 @use '../../styles/mixins' as *;
 .footer{
-  
+  .content{
+    .L-H-S{
+      .info{
+        h3{
+
+        }
+        p{
+
+        }
+      }
+      .contact{
+        .address{
+          svg{
+
+          }
+          p{
+
+          }
+        }
+        
+        .mobile{
+          svg{
+
+          }
+          p{
+
+          }
+        }
+
+      }
+    }
+
+    .R-H-S{
+
+      .links{
+        h6{
+
+        }
+        li{
+          a{
+            
+          }
+        }
+      }
+
+      .social{
+        h6{
+
+        }
+        li{
+          svg{
+
+          }
+          
+          a{
+
+          }
+        }
+      }
+    }
+  }
 }
