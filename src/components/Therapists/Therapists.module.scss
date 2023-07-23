@@ -1,5 +1,11 @@
-@use '../../styles/vars' as *;
-@use '../../styles/mixins' as *;
-.therapists{
-
+@use "../../styles/vars" as *;
+@use "../../styles/mixins" as *;
+.therapists {
+  padding: 3rem 10rem;
+  .all-therapists {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
 }

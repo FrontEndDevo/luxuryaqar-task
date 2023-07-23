@@ -3,7 +3,7 @@ import classes from "./Therapist.module.scss";
 const Therapist = (props) => {
   return (
     <li className={classes.therapist}>
-      <Image src={props.img} height={100} width={100} />
+      <Image className={classes['therapist-image']} src={props.img} height={400} width={380} />
       <div>
         <h4>{props.name}</h4>
         <button className={classes.review}>Add Review</button>
