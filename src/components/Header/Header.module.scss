@@ -91,6 +91,7 @@
       border-radius: 10rem;
       font-size: $heading_six;
       margin-left: 5rem;
+      border: none;
     }
   }
 
@@ -110,6 +111,90 @@
     svg {
       font-size: 2rem;
       cursor: pointer;
+    }
+  }
+}
+
+@include responsive(mobile) {
+  .header {
+    height: 100vh;
+    background-position: center;
+    .image {
+      display: none;
+    }
+
+    .title {
+      top: 20%;
+      left: unset;
+      text-align: center;
+      margin: 0 1rem;
+      h1 {
+        font-size: $heading_four;
+      }
+      p {
+        width: unset;
+        font-size: $heading_seven;
+        margin-top: 2rem;
+        text-align: justify;
+      }
+    }
+
+    .booking {
+      width: 100vw;
+      border-radius: unset;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      column-gap: 10px;
+      row-gap: 2rem;
+      .heading {
+        gap: 8px;
+
+        h4 {
+          font-size: $paragraph_small;
+        }
+      }
+      .treatment {
+        // ul{}
+      }
+
+      .date {
+        // input{}
+      }
+
+      .therapist {
+        // ul{}
+      }
+
+      .guest {
+        .heading {
+          h4 {
+          }
+
+          svg {
+          }
+        }
+      }
+
+      .book {
+        padding: 8px 2rem;
+        font-size: $paragraph_regular;
+        font-weight: bold;
+        margin-left: unset;
+        grid-column: 1 / 3;
+      }
+    }
+
+    .social {
+      top: 50%;
+      gap: 1rem;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      padding: 1rem;
+      svg {
+        font-size: 1rem;
+      }
     }
   }
 }
