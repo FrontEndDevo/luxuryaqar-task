@@ -11,6 +11,7 @@ import Samar from "../assets/images/therapists/therapists2-min.png";
 import Sara from "../assets/images/therapists/therapists3-min.png";
 import Maya from "../assets/images/therapists/therapists4-min.png";
 import Memberships from "@/components/Memberships/Memberships";
+import { getPageStaticInfo } from "next/dist/build/analysis/get-page-static-info";
 const LUXURY_ARAB_OFFERS = [
   {
     img: offer1,
@@ -92,6 +93,20 @@ const LUXURY_ARAB_THERAPISTS = [
   },
 ];
 
+const LUXURY_ARAB_MEMBERSHIPS = [
+  {
+    name: "King Spa",
+    cost: "AED 1000",
+    benefits: [
+      "Foot Scrub",
+      "Full Body Waxing Or Shaving",
+      " Moroccan Bath",
+      "Full Body Hot Stone Massage",
+      "Full Body Arabic Massage",
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -100,7 +115,7 @@ export default function Home() {
       <Offers offers={LUXURY_ARAB_OFFERS} />
       <Services services={LUXURY_ARAB_SERVICES} />
       <Therapists therapists={LUXURY_ARAB_THERAPISTS} />
-      <Memberships />
+      <Memberships memberships={LUXURY_ARAB_MEMBERSHIPS} />
       <Footer />
     </>
   );
