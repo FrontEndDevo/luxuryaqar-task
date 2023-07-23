@@ -9,3 +9,15 @@
     overflow: hidden;
   }
 }
+
+@include responsive(mobile) {
+  .services {
+    padding: 1rem;
+
+    .all-services {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+}
