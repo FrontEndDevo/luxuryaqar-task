@@ -3,6 +3,7 @@ import classes from "./Offers.module.scss";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Offers = (props) => {
+  
   return (
     <section className={classes.offers}>
       <div className={classes.title}>
