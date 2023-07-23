@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import classes from "./Navbar.module.scss";
@@ -8,7 +10,15 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.png";
+
 const Navbar = () => {
+  // This to managing appearing and disappearing the (menu-icon):
+  const [sideBar, setSideBar] = useState(false);
+
+  const toggleSideBarHandler = () => {
+    setSideBar((prevState) => !prevState);
+  };
+
   return (
     <nav className={classes.navbar}>
       <Image className={classes.image} src={logo} width={100} height={115} />
@@ -36,7 +46,12 @@ const Navbar = () => {
         <button className={classes["contact-us"]}>Contact us</button>
       </div>
       <div className={classes["side-bar"]}>
-        <span className={classes["menu-icon"]}>
+        <span
+          className={`${classes["menu-icon"]} ${
+            sideBar && classes["close-icon"]
+          }`}
+          onClick={toggleSideBarHandler}
+        >
           <span></span>
           <span></span>
           <span></span>
