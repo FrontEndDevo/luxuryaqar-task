@@ -21,3 +21,14 @@
     }
   }
 }
+
+@include responsive(tablet) {
+  .services {
+    padding: 2rem;
+
+    .all-services {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
