@@ -1,5 +1,14 @@
-@use '../../styles/vars' as *;
-@use '../../styles/mixins' as *;
-.memberships{
-  
+@use "../../styles/vars" as *;
+@use "../../styles/mixins" as *;
+.memberships {
+  padding: 3rem 10rem;
+  .title {
+    h2 {
+      margin-bottom: 5px;
+      font-size: $heading_two;
+    }
+    p {
+      font-size: $heading_seven;
+    }
+  }
 }
