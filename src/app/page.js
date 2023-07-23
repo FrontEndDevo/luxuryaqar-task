@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Offers from "@/components/Offers/Offers";
 import offer1 from "../assets/images/offers/offer1-min.png";
 import service1 from "../assets/images/services/service1-min.png";
+import Services from "@/components/Services/Services";
 const LUXURY_ARAB_OFFERS = [
   {
     img: offer1,
@@ -71,6 +72,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Offers offers={LUXURY_ARAB_OFFERS} />
+      <Services services={LUXURY_ARAB_SERVICES} />
     </>
   );
 }
