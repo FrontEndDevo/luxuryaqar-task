@@ -41,9 +41,11 @@ const SideBar = (props) => {
       <Image className={classes.image} src={logo} width={100} height={115} />
       {navbarLinks}
       <div className={classes.contact}>
-        <FontAwesomeIcon icon={faGlobe} />
-        <FontAwesomeIcon icon={faUser} />
-        <FontAwesomeIcon icon={faBagShopping} />
+        <div className={classes.icons}>
+          <FontAwesomeIcon icon={faGlobe} />
+          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={faBagShopping} />
+        </div>
         <button className={classes["contact-us"]}>Contact us</button>
       </div>
       <div className={classes.social}>
