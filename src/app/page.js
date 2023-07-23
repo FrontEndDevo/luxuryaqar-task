@@ -105,6 +105,39 @@ const LUXURY_ARAB_MEMBERSHIPS = [
       "Full Body Arabic Massage",
     ],
   },
+  {
+    name: "King Spa",
+    cost: "AED 1000",
+    benefits: [
+      "Foot Scrub",
+      "Full Body Waxing Or Shaving",
+      " Moroccan Bath",
+      "Full Body Hot Stone Massage",
+      "Full Body Arabic Massage",
+    ],
+  },
+  {
+    name: "King Spa",
+    cost: "AED 1000",
+    benefits: [
+      "Foot Scrub",
+      "Full Body Waxing Or Shaving",
+      " Moroccan Bath",
+      "Full Body Hot Stone Massage",
+      "Full Body Arabic Massage",
+    ],
+  },
+  {
+    name: "King Spa",
+    cost: "AED 1000",
+    benefits: [
+      "Foot Scrub",
+      "Full Body Waxing Or Shaving",
+      " Moroccan Bath",
+      "Full Body Hot Stone Massage",
+      "Full Body Arabic Massage",
+    ],
+  },
 ];
 
 export default function Home() {
