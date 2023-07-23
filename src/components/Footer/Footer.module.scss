@@ -41,7 +41,6 @@
       .social {
         h6 {
           padding: 5px 0;
-          // border-bottom: 1px solid white;
           font-size: $heading_five;
           position: relative;
           &::after {
@@ -71,5 +70,53 @@
   .copy-rights {
     text-align: end;
     font-size: $paragraph_regular;
+  }
+}
+
+@include responsive(mobile) {
+  .footer {
+    padding: 2rem;
+    .content {
+      flex-direction: column;
+      gap: 1rem;
+      .L-H-S {
+        gap: 3rem;
+        .info {
+          h3 {
+            font-size: $heading_five;
+          }
+          p {
+            width: 100%;
+            text-align: justify;
+          }
+        }
+      }
+
+      .R-H-S {
+        gap: 3rem;
+
+        .links,
+        .social {
+          h6 {
+            font-size: $heading_seven;
+            border-bottom: 1px solid white;
+            &::after {
+              display: none;
+            }
+          }
+
+          li {
+            a {
+              margin: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    .copy-rights {
+      text-align: center;
+      margin-top: 2rem;
+    }
   }
 }
