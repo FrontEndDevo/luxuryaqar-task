@@ -2,7 +2,7 @@ import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import Offers from "@/components/Offers/Offers";
 import offer1 from "../assets/images/offers/offer1-min.png";
-
+import service1 from "../assets/images/services/service1-min.png";
 const LUXURY_ARAB_OFFERS = [
   {
     img: offer1,
@@ -27,6 +27,41 @@ const LUXURY_ARAB_OFFERS = [
       "This luxurious session includes a manicure and pedicure to keep your hands and feet looking beautiful and healthy. Your nails will be trimmed, filed, and shaped to perfection.",
     time: "75 Min",
     cost: "AED 500",
+  },
+];
+
+const LUXURY_ARAB_SERVICES = [
+  {
+    img: service1,
+    title: "Full Body Massage",
+    description:
+      "Arabic massage is characterized by the use of traditional Arab massage techniques that focus on manipulating the skin and soft tissues to improve circulation and overall health.",
+    time: "60 Min",
+    cost: "AED 300",
+  },
+  {
+    img: service1,
+    title: "Full Body Massage",
+    description:
+      "Arabic massage is characterized by the use of traditional Arab massage techniques that focus on manipulating the skin and soft tissues to improve circulation and overall health.",
+    time: "60 Min",
+    cost: "AED 300",
+  },
+  {
+    img: service1,
+    title: "Full Body Massage",
+    description:
+      "Arabic massage is characterized by the use of traditional Arab massage techniques that focus on manipulating the skin and soft tissues to improve circulation and overall health.",
+    time: "60 Min",
+    cost: "AED 300",
+  },
+  {
+    img: service1,
+    title: "Full Body Massage",
+    description:
+      "Arabic massage is characterized by the use of traditional Arab massage techniques that focus on manipulating the skin and soft tissues to improve circulation and overall health.",
+    time: "60 Min",
+    cost: "AED 300",
   },
 ];
 
