@@ -100,7 +100,7 @@ const LUXURY_ARAB_MEMBERSHIPS = [
     benefits: [
       "Foot Scrub",
       "Full Body Waxing Or Shaving",
-      " Moroccan Bath",
+      "Moroccan Bath",
       "Full Body Hot Stone Massage",
       "Full Body Arabic Massage",
     ],
@@ -111,7 +111,7 @@ const LUXURY_ARAB_MEMBERSHIPS = [
     benefits: [
       "Foot Scrub",
       "Full Body Waxing Or Shaving",
-      " Moroccan Bath",
+      "Moroccan Bath",
       "Full Body Hot Stone Massage",
       "Full Body Arabic Massage",
     ],
@@ -122,7 +122,7 @@ const LUXURY_ARAB_MEMBERSHIPS = [
     benefits: [
       "Foot Scrub",
       "Full Body Waxing Or Shaving",
-      " Moroccan Bath",
+      "Moroccan Bath",
       "Full Body Hot Stone Massage",
       "Full Body Arabic Massage",
     ],
