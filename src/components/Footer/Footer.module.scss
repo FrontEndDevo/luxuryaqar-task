@@ -120,3 +120,52 @@
     }
   }
 }
+
+@include responsive(tablet) {
+  .footer {
+    padding: 3rem;
+    .content {
+      flex-direction: column;
+      .L-H-S {
+        gap: 1rem;
+        text-align: center;
+        .info {
+          h3 {
+            font-size: $heading_three;
+          }
+          p {
+            width: 100%;
+          }
+        }
+
+        .contact {
+          margin-bottom: 2rem;
+          .address,
+          .mobile {
+            justify-content: center;
+          }
+        }
+      }
+
+      .R-H-S {
+        .links,
+        .social {
+          h6 {
+            font-size: $heading_seven;
+          }
+
+          li {
+            gap: 1rem;
+            a {
+              margin: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    .copy-rights {
+      text-align: center;
+    }
+  }
+}
