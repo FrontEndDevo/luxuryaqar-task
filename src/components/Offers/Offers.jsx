@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./Offers.module.scss";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import SingleOffer from "./SingleOffer/SingleOffer";
+import SingleItem from "../SingleItem/SingleItem";
 import Title from "../Title/Title";
 const Offers = (props) => {
   const allOffers = props.offers.map((offer, index) => (
-    <SingleOffer
+    <SingleItem
       key={index}
       img={offer.img}
       title={offer.title}
