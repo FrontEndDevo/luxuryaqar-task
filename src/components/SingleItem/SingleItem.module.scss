@@ -1,6 +1,5 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
-
 .item {
   background-color: black;
   border-radius: 2rem;
@@ -8,7 +7,7 @@
   position: relative;
   .item-image {
     width: 100%;
-    max-height: 50%;
+    max-height: 60%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
   }
@@ -59,6 +58,32 @@
     .book-now {
       background-color: $main_color;
       color: black;
+    }
+  }
+}
+
+@include responsive(mobile) {
+  .item {
+    .details {
+      h3 {
+        font-size: $heading_seven;
+      }
+
+      p {
+        font-size: $paragraph_small;
+      }
+
+      .numbers {
+        font-size: $heading_seven;
+      }
+    }
+
+    .buttons {
+      padding: 0 1rem;
+
+      button {
+        font-size: $paragraph_regular;
+      }
     }
   }
 }
