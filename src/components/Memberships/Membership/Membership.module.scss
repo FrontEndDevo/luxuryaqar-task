@@ -1,5 +1,50 @@
 @use "../../../styles/vars" as *;
 @use "../../../styles/mixins" as *;
-.membership{
-  
+.membership {
+  background-color: #fdf1eb;
+  padding: 20px;
+  border-radius: 2rem;
+  border: 1px solid black;
+  .package {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: $heading_five;
+    font-weight: bold;
+  }
+  .all-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    li {
+      font-size: $heading_seven;
+      font-weight: bold;
+      span {
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-right: 1rem;
+        padding: 5px 10px;
+      }
+      a {
+      }
+    }
+  }
+
+  .register {
+    display: flex;
+    justify-content: center;
+    button {
+      margin-top: 2rem;
+      background: black;
+      color: $main_color;
+      text-transform: uppercase;
+      border-radius: 10rem;
+      padding: 10px 2rem;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
 }

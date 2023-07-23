@@ -14,7 +14,9 @@ const Membership = (props) => {
         <p>{props.cost}</p>
       </div>
       <ul className={styles["all-benefits"]}>{allBenefits}</ul>
-      <button className={styles.register}>Register Now</button>
+      <div className={styles.register}>
+        <button>Register Now</button>
+      </div>
     </li>
   );
 };
