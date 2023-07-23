@@ -1,5 +1,11 @@
-@use '../../styles/vars' as *;
-@use '../../styles/mixins' as *;
-.services{
-  
+@use "../../styles/vars" as *;
+@use "../../styles/mixins" as *;
+.services {
+  padding: 3rem 10rem;
+  .all-services {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
 }
