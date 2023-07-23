@@ -11,7 +11,7 @@ import logo from "../../assets/images/logo.png";
 const Navbar = () => {
   return (
     <nav className={classes.navbar}>
-      <Image src={logo} width={100} height={115} />
+      <Image className={classes.image} src={logo} width={100} height={115} />
       <ul className={classes.links}>
         <li>
           <Link href="/home">Home</Link>
@@ -34,6 +34,13 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faUser} />
         <FontAwesomeIcon icon={faBagShopping} />
         <button className={classes["contact-us"]}>Contact us</button>
+      </div>
+      <div className={classes["side-bar"]}>
+        <span className={classes["menu-icon"]}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </div>
     </nav>
   );
