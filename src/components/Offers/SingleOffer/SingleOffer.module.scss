@@ -1,6 +1,64 @@
-@use '../../../styles/vars' as *;
-@use '../../../styles/mixins' as *;
+@use "../../../styles/vars" as *;
+@use "../../../styles/mixins" as *;
 
-.offer{
-  
+.offer {
+  background-color: black;
+  border-radius: 2rem;
+  color: $main_color;
+  position: relative;
+  .offer-image {
+    width: 100%;
+    max-height: 50%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .details {
+    padding: 1rem;
+    h3 {
+      font-size: $heading_five;
+    }
+
+    p {
+      font-size: $paragraph_regular;
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .numbers {
+      font-size: $heading_five;
+    }
+  }
+
+  .buttons {
+    padding: 1rem;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    button {
+      outline: none;
+      border: 2px solid $main_color;
+      padding: 8px 3rem;
+      font-size: $heading_six;
+      cursor: pointer;
+      transition: $fast_transition;
+      border-radius: 10rem;
+      text-transform: capitalize;
+    }
+    .view-more {
+      background-color: transparent;
+      color: $main_color;
+      &:hover {
+        background-color: $main_color;
+        color: black;
+      }
+    }
+
+    .book-now {
+      background-color: $main_color;
+      color: black;
+    }
+  }
 }

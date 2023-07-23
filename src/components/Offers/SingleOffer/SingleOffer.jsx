@@ -1,28 +1,23 @@
 import Image from "next/image";
 import styles from "./SingleOffer.module.scss";
-import offerImg from "../../../assets/images/offers/offer1-min.png";
 const SingleOffer = (props) => {
+  const { img, title, description, time, cost } = props;
   return (
     <li className={styles.offer}>
       <Image
         className={styles["offer-image"]}
         loading="lazy"
-        src={offerImg}
-        width={100}
-        height={100}
+        src={img}
+        width={400}
+        height={400}
         alt="Offer image"
       />
       <div className={styles.details}>
-        <h3>Moroccan Bath with Arabic Massage</h3>
-        <p>
-          This treatment involves a deep-cleansing, full-body exfoliation using
-          a traditional Moroccan black soap made from natural ingredients like
-          olive oil, eucalyptus, and other nourishing oils.
-        </p>
-        <div>
-          <span className={styles.period}>75 Min</span>
-          <hr />
-          <span className={styles.currency}>AED 600</span>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <div className={styles.numbers}>
+          <span className={styles.period}>{time}</span> &ndash;{" "}
+          <span className={styles.currency}>{cost}</span>
         </div>
       </div>
       <div className={styles.buttons}>
