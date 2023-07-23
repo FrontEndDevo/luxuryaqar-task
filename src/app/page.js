@@ -10,6 +10,7 @@ import Rina from "../assets/images/therapists/therapists1-min.png";
 import Samar from "../assets/images/therapists/therapists2-min.png";
 import Sara from "../assets/images/therapists/therapists3-min.png";
 import Maya from "../assets/images/therapists/therapists4-min.png";
+import Memberships from "@/components/Memberships/Memberships";
 const LUXURY_ARAB_OFFERS = [
   {
     img: offer1,
@@ -99,6 +100,7 @@ export default function Home() {
       <Offers offers={LUXURY_ARAB_OFFERS} />
       <Services services={LUXURY_ARAB_SERVICES} />
       <Therapists therapists={LUXURY_ARAB_THERAPISTS} />
+      <Memberships />
       <Footer />
     </>
   );
