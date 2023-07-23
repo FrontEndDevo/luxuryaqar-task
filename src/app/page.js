@@ -5,6 +5,7 @@ import offer1 from "../assets/images/offers/offer1-min.png";
 import service1 from "../assets/images/services/service1-min.png";
 import Services from "@/components/Services/Services";
 import Footer from "@/components/Footer/Footer";
+import Therapists from "@/components/Therapists/Therapists";
 const LUXURY_ARAB_OFFERS = [
   {
     img: offer1,
@@ -74,6 +75,7 @@ export default function Home() {
       <Header />
       <Offers offers={LUXURY_ARAB_OFFERS} />
       <Services services={LUXURY_ARAB_SERVICES} />
+      <Therapists />
       <Footer />
     </>
   );
