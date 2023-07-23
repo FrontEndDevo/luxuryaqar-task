@@ -21,3 +21,15 @@
     }
   }
 }
+
+@include responsive(tablet) {
+  .therapists {
+    padding: 1rem;
+
+    .all-therapists {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}
