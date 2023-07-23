@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./Offers.module.scss";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import SingleOffer from "./SingleOffer/SingleOffer";
+import Title from "../Title/Title";
 const Offers = (props) => {
   const allOffers = props.offers.map((offer, index) => (
     <SingleOffer
@@ -15,16 +16,10 @@ const Offers = (props) => {
   ));
   return (
     <section className={classes.offers}>
-      <div className={classes.title}>
-        <div className={classes.introduction}>
-          <h2>Offers</h2>
-          <p>Promotions, deals and special offers for you</p>
-        </div>
-        <button className={classes["view-all"]}>
-          View all
-          <FontAwesomeIcon icon={faArrowRight} />
-        </button>
-      </div>
+      <Title
+        title="Offers"
+        description="Promotions, deals and special offers for you"
+      />
       <ul className={classes["all-offers"]}>{allOffers}</ul>
     </section>
   );
