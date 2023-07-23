@@ -1,11 +1,15 @@
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import Offers from "@/components/Offers/Offers";
+import Services from "@/components/Services/Services";
+import Therapists from "@/components/Therapists/Therapists";
+import Footer from "@/components/Footer/Footer";
 import offer1 from "../assets/images/offers/offer1-min.png";
 import service1 from "../assets/images/services/service1-min.png";
-import Services from "@/components/Services/Services";
-import Footer from "@/components/Footer/Footer";
-import Therapists from "@/components/Therapists/Therapists";
+import Rina from "../assets/images/therapists/therapists1-min.png";
+import Samar from "../assets/images/therapists/therapists2-min.png";
+import Sara from "../assets/images/therapists/therapists3-min.png";
+import Maya from "../assets/images/therapists/therapists4-min.png";
 const LUXURY_ARAB_OFFERS = [
   {
     img: offer1,
@@ -68,6 +72,25 @@ const LUXURY_ARAB_SERVICES = [
   },
 ];
 
+const LUXURY_ARAB_THERAPISTS = [
+  {
+    img: Rina,
+    name: "Rina",
+  },
+  {
+    img: Samar,
+    name: "Samar",
+  },
+  {
+    img: Sara,
+    name: "Sara",
+  },
+  {
+    img: Maya,
+    name: "Maya",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -75,7 +98,7 @@ export default function Home() {
       <Header />
       <Offers offers={LUXURY_ARAB_OFFERS} />
       <Services services={LUXURY_ARAB_SERVICES} />
-      <Therapists />
+      <Therapists therapists={LUXURY_ARAB_THERAPISTS} />
       <Footer />
     </>
   );
