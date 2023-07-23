@@ -33,3 +33,25 @@
     }
   }
 }
+
+@include responsive(mobile) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    .introduction {
+      h2 {
+        font-size: $heading_five;
+      }
+      p {
+        font-size: $paragraph_regular;
+      }
+    }
+    .view-all {
+      width: 100%;
+      padding: 5px 1rem;
+      font-size: $heading_seven;
+      font-weight: normal;
+    }
+  }
+}
