@@ -48,28 +48,9 @@
 }
 
 @include responsive(mobile) {
-  .membership {
-    .package {
-      flex-direction: column;
-      font-size: $heading_seven;
-      h2 {
-        margin-right: auto;
-      }
-      p {
-        margin-left: auto;
-      }
-    }
+  @include Membership-content;
+}
 
-    .all-benefits {
-      margin-top: 1rem;
-      gap: 1rem;
-      li {
-        font-size: $paragraph_regular;
-        span {
-          margin-right: 10px;
-          padding: 3px 8px;
-        }
-      }
-    }
-  }
+@include responsive(tablet) {
+  @include Membership-content;
 }

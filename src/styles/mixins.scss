@@ -1,3 +1,4 @@
+@use './vars' as *;
 @mixin responsive($device) {
   @if $device == mobile {
     @media (max-width: 767px) {
@@ -12,6 +13,7 @@
   }
 }
 
+// Navbar component content:
 @mixin navbar-content {
   .navbar {
     justify-content: space-between;
@@ -31,6 +33,34 @@
 
     .contact {
       display: none;
+    }
+  }
+}
+
+// Membership component content:
+@mixin Membership-content{
+    .membership {
+    .package {
+      flex-direction: column;
+      font-size: $heading_seven;
+      h2 {
+        margin-right: auto;
+      }
+      p {
+        margin-left: auto;
+      }
+    }
+
+    .all-benefits {
+      margin-top: 1rem;
+      gap: 1rem;
+      li {
+        font-size: $paragraph_regular;
+        span {
+          margin-right: 10px;
+          padding: 3px 8px;
+        }
+      }
     }
   }
 }
