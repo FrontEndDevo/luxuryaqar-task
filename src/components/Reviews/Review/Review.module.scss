@@ -31,3 +31,10 @@
     text-align: end;
   }
 }
+
+@include responsive(mobile) {
+  .review {
+    gap: 4rem;
+    min-width: calc(100% - 1rem);
+  }
+}

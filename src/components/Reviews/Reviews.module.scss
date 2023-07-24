@@ -18,8 +18,29 @@
 
   .slider-bullets {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
+  }
+}
+
+@include responsive(mobile) {
+  .reviews {
+    padding: 1rem;
+
+    .title {
+      font-size: $heading_five;
+    }
+
+    .container {
+      .all-reviews {
+        gap: 1rem;
+      }
+    }
+
+    .slider-bullets {
+      gap: 1.2rem;
+    }
   }
 }

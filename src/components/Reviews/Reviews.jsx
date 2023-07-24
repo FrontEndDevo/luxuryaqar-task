@@ -21,8 +21,14 @@ const Reviews = (props) => {
     setBulletIndex(i);
   };
 
+  const screenWidth = window.innerWidth;
+
+  console.log(screenWidth);
   // Detect how much Bullet must be rendered:
-  const numOfBullets = Math.floor(props.reviews.length / 4);
+  const numOfBullets =
+    screenWidth < 767
+      ? props.reviews.length - 1
+      : Math.floor(props.reviews.length / 4);
 
   const allBullets = [];
   for (let i = 1; i <= numOfBullets; i++) {
