@@ -15,6 +15,11 @@ const Reviews = (props) => {
       <div className={classes.container}>
         <ul className={classes["all-reviews"]}>{allReviews}</ul>
       </div>
+      <div className={classes["slider-bullets"]}>
+        <span className={`${classes.bullet} ${classes.active}`}></span>
+        <span className={classes.bullet}></span>
+        <span className={classes.bullet}></span>
+      </div>
     </section>
   );
 };
