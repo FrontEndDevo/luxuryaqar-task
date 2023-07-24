@@ -141,6 +141,33 @@ const LUXURY_ARAB_MEMBERSHIPS = [
   },
 ];
 
+const LUXURY_ARAB_REVIEWS = [
+  {
+    rate: 5,
+    feedback:
+      "Amazing spa. Many thanks to miss Sara who is working there. She was very kind and friendly and very professional",
+    reviewer: "Mohamed Hassan",
+  },
+  {
+    rate: 5,
+    feedback:
+      "Amazing spa. Many thanks to miss Sara who is working there. She was very kind and friendly and very professional",
+    reviewer: "Mohamed Hassan",
+  },
+  {
+    rate: 5,
+    feedback:
+      "Amazing spa. Many thanks to miss Sara who is working there. She was very kind and friendly and very professional",
+    reviewer: "Mohamed Hassan",
+  },
+  {
+    rate: 5,
+    feedback:
+      "Amazing spa. Many thanks to miss Sara who is working there. She was very kind and friendly and very professional",
+    reviewer: "Mohamed Hassan",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -150,7 +177,7 @@ export default function Home() {
       <Services services={LUXURY_ARAB_SERVICES} />
       <Therapists therapists={LUXURY_ARAB_THERAPISTS} />
       <Memberships memberships={LUXURY_ARAB_MEMBERSHIPS} />
-      <Reviews />
+      <Reviews reviews={LUXURY_ARAB_REVIEWS} />
       <Footer />
     </>
   );
