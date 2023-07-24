@@ -12,6 +12,7 @@ import Sara from "../assets/images/therapists/therapists3-min.png";
 import Maya from "../assets/images/therapists/therapists4-min.png";
 import Memberships from "@/components/Memberships/Memberships";
 import { getPageStaticInfo } from "next/dist/build/analysis/get-page-static-info";
+import Reviews from "@/components/Reviews/Reviews";
 const LUXURY_ARAB_OFFERS = [
   {
     img: offer1,
@@ -149,6 +150,7 @@ export default function Home() {
       <Services services={LUXURY_ARAB_SERVICES} />
       <Therapists therapists={LUXURY_ARAB_THERAPISTS} />
       <Memberships memberships={LUXURY_ARAB_MEMBERSHIPS} />
+      <Reviews />
       <Footer />
     </>
   );
