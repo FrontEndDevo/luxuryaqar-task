@@ -4,12 +4,13 @@ import Bullet from "./Bullet/Bullet";
 import Review from "./Review/Review";
 import classes from "./Reviews.module.scss";
 const Reviews = (props) => {
-  const [bulletIndex, setBulletIndex] = useState(1);
+  const [bulletIndex, setBulletIndex] = useState(0);
 
   // Render all coming reviews from API.
   const allReviews = props.reviews.map((review, index) => (
     <Review
       key={index}
+      index={index + 1}
       rate={review.rate}
       feedback={review.feedback}
       reviewer={review.reviewer}
@@ -26,12 +27,14 @@ const Reviews = (props) => {
   console.log(screenWidth);
   // Detect how much Bullet must be rendered:
   const numOfBullets =
-    screenWidth < 767
-      ? props.reviews.length - 1
-      : Math.floor(props.reviews.length / 4);
+    screenWidth < 768
+      ? props.reviews.length
+      : (screenWidth >= 768) & (screenWidth < 1200)
+      ? Math.ceil(props.reviews.length / 2)
+      : Math.ceil(props.reviews.length / 4);
 
   const allBullets = [];
-  for (let i = 1; i <= numOfBullets; i++) {
+  for (let i = 0; i < numOfBullets; i++) {
     const bullet = (
       <Bullet
         key={i}

@@ -15,7 +15,9 @@ const Review = (props) => {
         </div>
         <p className={classes.feedback}>"{feedback}"</p>
       </div>
-      <span className={classes.reviewer}>_ By {reviewer}</span>
+      <span className={classes.reviewer}>
+        _ By {reviewer}_{props.index}
+      </span>
     </li>
   );
 };

@@ -44,3 +44,13 @@
     }
   }
 }
+
+@include responsive(tablet) {
+  .reviews {
+    padding: 2rem;
+
+    .slider-bullets {
+      gap: 1.5rem;
+    }
+  }
+}
