@@ -12,7 +12,9 @@ const Reviews = (props) => {
   return (
     <section className={classes.reviews}>
       <h2 className={classes.title}>What they say about us</h2>
-      <ul className={classes["all-reviews"]}>{allReviews}</ul>
+      <div className={classes.container}>
+        <ul className={classes["all-reviews"]}>{allReviews}</ul>
+      </div>
     </section>
   );
 };

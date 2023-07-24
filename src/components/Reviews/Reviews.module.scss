@@ -1,16 +1,17 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
 .reviews {
-  padding: 3rem 10rem;
+  padding: 3rem 12rem;
   .title {
     font-size: $heading_three;
     text-align: center;
   }
-
-  .all-reviews {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
+  .container {
     overflow: hidden;
+    .all-reviews {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
   }
 }
