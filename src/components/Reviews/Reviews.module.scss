@@ -1,10 +1,15 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
-
 .reviews {
   .title {
-    margin-bottom: 1rem;
     font-size: $heading_three;
     text-align: center;
+  }
+
+  .all-reviews {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
   }
 }
