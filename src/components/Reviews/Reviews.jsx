@@ -22,10 +22,8 @@ const Reviews = (props) => {
     setBulletIndex(i);
   };
 
-  const screenWidth = window.innerWidth;
-
-  console.log(screenWidth);
   // Detect how much Bullet must be rendered:
+  const screenWidth = typeof window !== "undefined" ? window.innerWidth : 1200;
   const numOfBullets =
     screenWidth < 768
       ? props.reviews.length
