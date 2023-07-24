@@ -1,6 +1,10 @@
-@use '../../styles/vars' as *;
-@use '../../styles/mixins' as *;
+@use "../../styles/vars" as *;
+@use "../../styles/mixins" as *;
 
-.reviews{
-  
+.reviews {
+  .title {
+    margin-bottom: 1rem;
+    font-size: $heading_three;
+    text-align: center;
+  }
 }
