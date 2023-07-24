@@ -5,15 +5,17 @@ const Review = (props) => {
   const { rate, feedback, reviewer } = props;
   return (
     <li className={classes.review}>
-      <div className={classes.rate}>
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
+      <div className={classes.top}>
+        <div className={classes.rate}>
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
+        <p className={classes.feedback}>"{feedback}"</p>
       </div>
-      <div className={classes.feedback}>"{feedback}"</div>
-      <div className={classes.reviewer}>_ By {reviewer}</div>
+      <span className={classes.reviewer}>_ By {reviewer}</span>
     </li>
   );
 };

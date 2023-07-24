@@ -1,6 +1,7 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
 .reviews {
+  padding: 3rem 10rem;
   .title {
     font-size: $heading_three;
     text-align: center;
@@ -8,8 +9,8 @@
 
   .all-reviews {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
     overflow: hidden;
   }
 }

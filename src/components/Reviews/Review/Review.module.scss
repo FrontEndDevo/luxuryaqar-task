@@ -1,5 +1,32 @@
 @use "../../../styles/vars" as *;
 @use "../../../styles/mixins" as *;
-.review{
-  
+.review {
+  border-radius: 2rem;
+  border: 1px solid black;
+  background-color: #fdf1eb;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  .top {
+    .rate {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 1rem;
+      svg {
+        color: #f36b1d;
+        font-size: 24px;
+      }
+    }
+
+    .feedback {
+      font-size: $paragraph_regular;
+    }
+  }
+
+  .reviewer {
+    font-style: italic;
+    font-weight: bold;
+    text-align: end;
+  }
 }
