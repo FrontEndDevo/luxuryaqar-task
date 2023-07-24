@@ -214,6 +214,12 @@ const LUXURY_ARAB_REVIEWS = [
       "Amazing spa. Many thanks to miss Sara who is working there. She was very kind and friendly and very professional",
     reviewer: "Mohamed Hassan",
   },
+  {
+    rate: 5,
+    feedback:
+      "Amazing spa. Many thanks to miss Sara who is working there. She was very kind and friendly and very professional",
+    reviewer: "Mohamed Hassan",
+  },
 ];
 
 export default function Home() {
