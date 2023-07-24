@@ -20,16 +20,5 @@
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-
-    .bullet {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #707070;
-      cursor: pointer;
-      &.active {
-        background-color: #011f2a;
-      }
-    }
   }
 }
